@@ -1,0 +1,19 @@
+
+<nav>
+    <button (click)="menu()" [ngStyle]="{'display': open_menu ? 'none' : 'block'}"><mat-icon class="icon-menu" >menu</mat-icon></button>
+    <ul [ngStyle]="{'left': open_menu ? '0%' : '-100%'}">
+        <a class="icon-menu" (click)="menu()"><i class="fa-solid fa-xmark"></i></a>
+        <li>
+        <a href="#inicio" (click)="menu()">Inicio</a>
+        </li>
+        <li>
+            <a href="#cuidados" (click)="menu()">Cuidados</a>
+        </li>
+        <li>
+            <a href="#horarios" (click)="menu()">Horarios</a>
+        </li>
+        <li>
+            <a href="#contacto" (click)="menu()">Contacto</a>
+        </li>
+    </ul>
+</nav>

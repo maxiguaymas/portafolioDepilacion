@@ -1,0 +1,27 @@
+<div id="horarios">
+
+    <div>
+        <h2>Dia : {{date}}</h2>
+        <h3>Horarios : </h3><p class="green">Disponible</p><p class="red">Reservado</p>
+    </div>
+    
+
+    <table>
+        <tr>
+            <td *ngFor="let turno of column_1" [ngClass]="getClassOf(turno)">{{turno.hora}}</td>
+            
+        </tr>
+        <tr>
+            <td *ngFor="let turno of column_2" [ngClass]="getClassOf(turno)">{{turno.hora}}</td>
+           
+        </tr>
+        <tr>
+            <td *ngFor="let turno of column_3" [ngClass]="getClassOf(turno)">{{turno.hora}}</td>
+            
+        </tr>
+        <tr>
+            <td *ngFor="let turno of column_4" [ngClass]="getClassOf(turno)">{{turno.hora}}</td>
+            
+        </tr>
+    </table>
+</div>

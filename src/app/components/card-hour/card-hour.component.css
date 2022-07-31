@@ -1,0 +1,24 @@
+::placeholder {
+    color: #444;
+    font-size: 1em;
+  }
+
+.card{
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+mat-form-field{
+    margin-right: 2em;
+    width: 22%;
+}
+input{
+    margin-top: 2vh;
+}
+.save{
+    float: right;
+    border: 2px solid #223271;
+    margin-right: 2.5em;
+    margin-top: 4vh;
+}

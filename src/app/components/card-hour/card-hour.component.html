@@ -1,0 +1,27 @@
+
+<mat-card class="card">
+    <form [formGroup]="turnoForm" (submit)="submitTurno()">
+        <mat-form-field>
+            <label for="hora">Hora</label>
+            <input matInput type="text" formControlName="hora" placeholder="{{cliente.hora}}">
+        </mat-form-field>
+        <mat-form-field>
+            <label for="nombre_completo">Nombre y apellido</label>
+            <input matInput type="text" formControlName="nombre_completo" placeholder="{{cliente.nombre_completo}}">
+        </mat-form-field>
+        <mat-form-field>
+            <label for="zonas">Zonas</label>
+            <input matInput type="text" formControlName="zonas" placeholder="{{cliente.zonas}}">
+        </mat-form-field>
+        <mat-form-field>
+            <label for="fecha">Fecha</label>
+            <input matInput type="text" formControlName="fecha" placeholder="{{cliente.fecha}}">
+        </mat-form-field>
+        <mat-form-field>
+            <label for="precio">Precio</label>
+            <input matInput type="number" formControlName="precio" placeholder="{{cliente.precio}}">
+        </mat-form-field>
+        <!-- <button mat-raised-button class="save edit" [disabled]="turnoForm.invalid" (click)="editTurno()">Editar</button> -->
+        <button mat-raised-button class="save" [disabled]="turnoForm.invalid">Guardar</button>
+    </form>  
+</mat-card>

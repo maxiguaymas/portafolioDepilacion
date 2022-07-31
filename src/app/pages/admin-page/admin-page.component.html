@@ -1,0 +1,30 @@
+<div id="content-admin">
+    <header>
+        <div class="title">
+            <h1>Panel de Administracion de </h1>
+            <h3>DreamSkin</h3>
+        </div>
+        
+    </header>
+    <section class="content">
+        <button mat-raised-button class="start" (click)="startList()">Empezar nueva lista</button>
+        <button mat-raised-button class="btn-list" [routerLink]="['/lista-turnos']">Ver lista Completa</button>
+        <div class="box-list">
+            <!-- <div *ngIf="!save">
+               <mat-form-field >
+                <label for="date">Fecha de depilacion: </label>
+                <input matInput type="text" [(ngModel)]="date">
+                </mat-form-field>
+                <button mat-raised-button class="add" (click)="saveDate()">Establecer fecha</button>
+            </div> -->
+            
+            <div>
+               <button mat-raised-button class="add" (click)="addClient()">Agregar un turno</button>
+                <app-card-hour *ngFor="let client of clients" [cliente]="client" (refresh)="refresh()"></app-card-hour> 
+            </div>
+            
+            
+        </div>
+    </section>
+
+</div>
